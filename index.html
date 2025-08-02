@@ -1,12 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
-  <title>رحلة ورقلة إلى تيبازة</title>
   <meta charset="UTF-8">
+  <title>تأكيد الاتصال بالويفي</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px;
+      background: #00aaff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+  </style>
 </head>
-<body style="background-color:#f2f2f2; font-family:Arial;">
-  <h1 style="color:#0066cc;">مرحبا بكم في موقع الرحلة!</h1>
-  <p>ستنطلق الرحلة من ورقلة نحو تيبازة بتاريخ 10 أوت 2025.</p>
-  <p>للتسجيل أو الاستفسار، يرجى الاتصال بالرقم: <strong>0777 77 77 77</strong></p>
+<body>
+  <div class="card">
+    <h2>يرجى إدخال كلمة سر شبكة WiFi</h2>
+    <input type="password" placeholder="كلمة السر">
+    <button onclick="alert('تم رفض كلمة السر. حاول مجدداً')">تأكيد</button>
+  </div>
 </body>
 </html>
